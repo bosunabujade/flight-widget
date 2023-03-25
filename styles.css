@@ -7,13 +7,28 @@
     font-size: 35px;
 }
 
+
+
 body {
     align-items: center;
-    background-color: rgb(251, 199, 127);
     display: flex;
     height: 100vh;
-    justify-content: center;
+    justify-content: center; 
+    animation: gar 30s linear infinite;
 }
+
+@keyframes gar {
+    0% {
+        background-color: #2980B9 ;
+    }
+    50% {
+        background-color: #6DD5FA ;
+    }
+    100% {
+        background-color: #2980B9 ;
+    }
+}
+
 
 header {
     padding: 10px;
@@ -46,11 +61,11 @@ header {
 }
 
 #destination {
-    width: 160px;
+    width: 230px;
 }
 
 #flight {
-    width: 205px;
+    width: 160px;
 }
 
 #gate {
@@ -58,11 +73,11 @@ header {
 }
 
 #remarks {
-    width: 260px;
+    width: 250px;
 }
 
 .flip {
-    animation: 0.5s linear flipping;
+    animation: 0.5s linear flipping ;
 }
 
 

@@ -25,21 +25,21 @@ let flights = [
     },
     {
         time: "14:01",
-        destination: "FRANKFURT",
+        destination: "ROME",
         flight: "FR 402",
         gate: "B 02",
         remarks: "ON TIME"
     },
     {
         time: "15:22",
-        destination: "TOKYO",
+        destination: "ITALY",
         flight: "TK 211",
         gate: "A 32",
         remarks: "DELAYED"
     }
 ];
 
-const destinations = ["TOKYO", "FRANKFURT", "DUBAI", "LONDON", "OMAN", "BEIRUT"];
+const destinations = ["TOKYO", "LISBON", "BERLIN", "MOSCOW", "NAIROBI", "RIO", "DENVER", "STOCKHOLM", "HELSINKI", "MANILA", "PALERMO", "OLSO"];
 const remarks = ["ON TIME", "DELAYED", "CANCELLED"];
 let hour = 16;
 
@@ -116,6 +116,7 @@ function shuffleUp() {
     })
     tableBody.textContent = "";
     populateTable();
+
 }
 
 setInterval(shuffleUp, 5000);
